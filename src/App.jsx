@@ -20,13 +20,13 @@ function App() {
     }
   };
 
-  console.log(gameState);
-
   return (
     <div className="body">
       {renderComponent()}
       <button onClick={() => setGameState('start')}>Start Menu</button>
+      <br />
       <button onClick={() => setGameState('game')}>Start Game</button>
+      <br />
       <button onClick={() => setGameState('end')}>End Game</button>
     </div>
   );
