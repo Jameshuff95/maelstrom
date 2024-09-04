@@ -11,7 +11,7 @@
   overflow: hidden;
 
   .title {
-    margin: 0 auto;
+    margin: 0;
     height: 15%;
     font-family: Creepster;
     font-size: 2.8rem;
@@ -51,6 +51,11 @@
     align-items: center;
     align-items: center;
     justify-content: space-around;
+
+    .title {
+      width: 90%;
+      font-size: 2.6rem;
+    }
 
     .start {
       width: 5rem;
