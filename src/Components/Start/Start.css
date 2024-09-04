@@ -50,6 +50,10 @@
   .start:focus {
     outline: none;
   }
+
+  button.start {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 @media (max-width: 500px) {
@@ -70,62 +74,6 @@
       position: static;
       left: auto;
       bottom: auto;
-    }
-
-    .start_container {
-      height: 100dvh;
-      max-width: 900px;
-      margin: auto;
-      display: flex;
-      background-image: url('../../assets/clown.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: hidden;
-    }
-
-    .title {
-      margin: 0 auto;
-      height: 15%;
-      font-family: Creepster;
-      font-size: 2.8rem;
-      color: red;
-      -webkit-text-stroke: 2px black; /* for Safari/Chrome */
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .start {
-      width: 5rem;
-      border-radius: 20px;
-      background-color: yellow;
-      color: black;
-      font-size: 1rem;
-      font-family: Creepster;
-      border: 10px solid transparent;
-      position: absolute;
-      left: 5%;
-      bottom: 10%;
-    }
-
-    .start:hover {
-      cursor: pointer;
-      border: 10px solid red;
-      box-shadow: inset 0 0 0.5rem black;
-      color: red;
-    }
-
-    .start:active {
-      transform: scale(0.9);
-    }
-
-    .start:focus {
-      outline: none;
-    }
-
-    button.start {
-      -webkit-tap-highlight-color: transparent;
     }
   }
 }
