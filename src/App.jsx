@@ -28,7 +28,7 @@ function App() {
           Start Menu
         </button>
       )}
-      {gameState !== 'game' && gameState !== 'end' && (
+      {gameState !== 'game' && gameState !== 'end' && gameState !== 'start' && (
         <button className="button" onClick={() => setGameState('game')}>
           Start Game
         </button>
