@@ -46,6 +46,10 @@
   .start:active {
     transform: scale(0.9);
   }
+
+  button.start:focus {
+    outline: none;
+  }
 }
 
 @media (max-width: 500px) {
