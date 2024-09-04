@@ -35,6 +35,17 @@
     left: 5%;
     bottom: 10%;
   }
+
+  .start:hover {
+    cursor: pointer;
+    border: 10px solid red;
+    box-shadow: inset 0 0 0.5rem black;
+    color: red;
+  }
+
+  .start:active {
+    transform: scale(0.9);
+  }
 }
 
 @media (max-width: 500px) {
