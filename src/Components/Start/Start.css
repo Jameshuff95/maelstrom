@@ -11,7 +11,7 @@
   overflow: hidden;
 
   .title {
-    margin: 0 auto;
+    margin-top: -3rem;
     height: 15%;
     font-family: Creepster;
     font-size: 2.8rem;

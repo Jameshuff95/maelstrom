@@ -1,4 +1,5 @@
 import './Start.css';
+import '../../App.css';
 import { useEffect, useRef } from 'react';
 
 function Start({ setGameState }) {
@@ -40,7 +41,7 @@ function Start({ setGameState }) {
       <div className="start_container">
         <h1 className="title">Maelstrom</h1>
         <div className="button_container">
-          <button className="start" ref={startButtonRef} onClick={handleClick}>
+          <button className="button" ref={startButtonRef} onClick={handleClick}>
             Start Game
           </button>
         </div>

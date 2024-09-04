@@ -24,13 +24,19 @@ function App() {
     <div className="body">
       {renderComponent()}
       {gameState !== 'start' && gameState !== 'game' && (
-        <button onClick={() => setGameState('start')}>Start Menu</button>
+        <button className="button" onClick={() => setGameState('start')}>
+          Start Menu
+        </button>
       )}
       {gameState !== 'game' && gameState !== 'end' && (
-        <button onClick={() => setGameState('game')}>Start Game</button>
+        <button className="button" onClick={() => setGameState('game')}>
+          Start Game
+        </button>
       )}
-      {gameState !== 'end' && (
-        <button onClick={() => setGameState('end')}>End Game</button>
+      {gameState !== 'end' && gameState !== 'start' && (
+        <button className="button" onClick={() => setGameState('end')}>
+          End Game
+        </button>
       )}
     </div>
   );
