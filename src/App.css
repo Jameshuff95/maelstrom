@@ -10,9 +10,7 @@ body {
   font-size: 1rem;
   font-family: Creepster;
   border: 10px solid transparent;
-  position: absolute;
-  left: 5%;
-  bottom: 10%;
+  margin: 1rem;
 }
 
 .button:hover {
@@ -32,13 +30,4 @@ body {
 
 button.button {
   -webkit-tap-highlight-color: transparent;
-}
-
-@media screen and (max-width: 500px) {
-  .start {
-    width: 5rem;
-    position: static;
-    left: auto;
-    bottom: auto;
-  }
 }
