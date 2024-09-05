@@ -48,6 +48,9 @@
   border-radius: 6px;
 }
 
+.start_message {
+  padding: 3%;
+}
 .button {
   position: absolute;
   bottom: 5%;
