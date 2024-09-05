@@ -41,6 +41,25 @@ function Start({ setGameState }) {
       <div className="start_container">
         <h1 className="title">Maelstrom</h1>
         <div className="button_container">
+          <div className="start_message">
+            <p>
+              In the forsaken depths of the asylum, where shadows whisper and
+              sanity crumbles, Dr. Evelyn Carter’s journey begins.
+            </p>
+            <p>
+              Each choice she makes drags her deeper into the abyss, where the
+              line between reality and nightmare blurs.
+            </p>
+            <p>
+              What secrets lie hidden in the darkness? What truths will she
+              uncover about herself?
+            </p>
+            <p>
+              Is she ready to confront the horrors that lurk within her own
+              mind? And amidst the chaos, can she find a glimmer of hope to
+              guide her back to the light?
+            </p>
+          </div>
           <button className="button" ref={startButtonRef} onClick={handleClick}>
             Start Game
           </button>

@@ -5,10 +5,10 @@
   max-width: 900px;
   margin: auto;
   display: flex;
+  flex-direction: column;
   background-image: url('../../assets/clown.png');
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 .title {
@@ -17,11 +17,40 @@
   font-family: Creepster;
   font-size: 2.8rem;
   color: red;
-  -webkit-text-stroke: 2px black; /* for Safari/Chrome/Edge */
+  -webkit-text-stroke: 2px black;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+}
+
+.button_container {
+  height: 20%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button_container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.button_container::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 6px;
+}
+
+.button_container::-webkit-scrollbar-track {
+  background: yellow;
+  border-radius: 6px;
+}
+
+.button {
+  position: absolute;
+  bottom: 5%;
 }
 
 @media (max-width: 500px) {
@@ -29,12 +58,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     background-size: contain;
   }
 
   .title {
     font-size: 2.5rem;
     margin-top: -0.25rem;
+  }
+
+  .button_container {
+    margin-top: 80%;
+    height: 35%;
+  }
+
+  .button {
+    position: static;
+    bottom: auto;
   }
 }
