@@ -50,7 +50,13 @@
 
 .start_message {
   padding: 3%;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+  }
 }
+
 .button {
   position: absolute;
   bottom: 5%;

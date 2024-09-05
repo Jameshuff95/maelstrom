@@ -34,7 +34,7 @@ function App() {
         </button>
       )}
       {gameState !== 'end' && gameState !== 'start' && (
-        <button className="button" onClick={() => setGameState('end')}>
+        <button className="button" onClick={() => setGameState('start')}>
           End Game
         </button>
       )}
