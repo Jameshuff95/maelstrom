@@ -1,30 +1,20 @@
-function Good_End() {
+function Good_End({ setGameState }) {
   return (
     <>
       <p>
-        As the final echoes of your footsteps fade into the light, the walls of
-        reality solidify around you.
+        Victor, overwhelmed by the suffocating madness, flees the apartment in a
+        desperate bid for freedom. The cold night air hits him like a shock, and
+        he stumbles through the empty streets, the sinister whispers still
+        echoing in his mind. As he runs, the voices gradually fade, replaced by
+        the distant sounds of the city. Exhausted and disoriented, Victor
+        collapses on a park bench, the first rays of dawn breaking through the
+        darkness. Though the voices are gone, the scars they left remain. Victor
+        knows he must seek help to truly escape the torment that has plagued
+        him, but for now, he finds solace in the quiet morning light.
       </p>
-      <p>
-        The whispers that once haunted your mind are silenced, replaced by a
-        serene clarity that washes over you.
-      </p>
-      <p>
-        Each choice you made, each path you took, has led you here—to a place
-        where the shadows of doubt and fear no longer hold sway.
-      </p>
-      <p>
-        The world around you brightens, a reflection of your newfound peace and
-        strength.
-      </p>
-      <p>
-        In the end, it is not the darkness that defines you, but the light born
-        from your courage and wisdom.
-      </p>
-      <p>
-        You are no longer alone, but embraced by the harmony of your own making,
-        free from the chains of your past.
-      </p>
+      <button className="button" onClick={() => setGameState('start')}>
+        Start Menu
+      </button>
     </>
   );
 }

@@ -1,93 +1,50 @@
 const paths = {
   1: {
-    text: 'Scenario 1',
+    text: 'You find yourself at the entrance of a dark forest. Do you dare to enter?',
     options: [
-      { next: '2', text: 'Option 1-1', value: 1 },
-      { next: '2', text: 'Option 1-2', value: -1 },
-      { next: '2', text: 'Option 1-3', value: 2 },
-      { next: '2', text: 'Option 1-4', value: -2 },
+      { text: 'Enter the forest', next: '2' },
+      { text: 'Walk away', next: '3' },
     ],
   },
   2: {
-    text: 'Scenario 2',
+    text: 'As you venture deeper into the forest, you come across a fork in the path. Which way do you go?',
     options: [
-      { next: '3', text: 'Option 2-1', value: 1 },
-      { next: '3', text: 'Option 2-2', value: -1 },
-      { next: '3', text: 'Option 2-3', value: 2 },
-      { next: '3', text: 'Option 2-4', value: -2 },
+      { text: 'Take the left path', next: '4' },
+      { text: 'Take the right path', next: '5' },
     ],
   },
   3: {
-    text: 'Scenario 3',
-    options: [
-      { next: '4', text: 'Option 3-1', value: 1 },
-      { next: '4', text: 'Option 3-2', value: -1 },
-      { next: '4', text: 'Option 3-3', value: 2 },
-      { next: '4', text: 'Option 3-4', value: -2 },
-    ],
+    text: "You decide it's best not to take any risks and walk away. You live a safe but uneventful life.",
+    options: [{ text: 'Home Menu', next: 'start' }],
   },
   4: {
-    text: 'Scenario 4',
+    text: 'The left path leads you to a beautiful clearing with a sparkling pond. You feel at peace.',
     options: [
-      { next: '5', text: 'Option 4-1', value: 1 },
-      { next: '5', text: 'Option 4-2', value: -1 },
-      { next: '5', text: 'Option 4-3', value: 2 },
-      { next: '5', text: 'Option 4-4', value: -2 },
+      { text: 'Sit by the pond', next: 'good_end' },
+      { text: 'Continue exploring', next: '6' },
     ],
   },
   5: {
-    text: 'Scenario 5',
+    text: 'The right path leads you to a dark cave. You hear strange noises coming from inside.',
     options: [
-      { next: '6', text: 'Option 5-1', value: 1 },
-      { next: '6', text: 'Option 5-2', value: -1 },
-      { next: '6', text: 'Option 5-3', value: 2 },
-      { next: '6', text: 'Option 5-4', value: -2 },
+      { text: 'Enter the cave', next: 'bad_end' },
+      { text: 'Turn back', next: '2' },
     ],
   },
   6: {
-    text: 'Scenario 6',
+    text: 'As you continue exploring, you find a hidden treasure chest filled with gold and jewels.',
     options: [
-      { next: '7', text: 'Option 6-1', value: 1 },
-      { next: '7', text: 'Option 6-2', value: -1 },
-      { next: '7', text: 'Option 6-3', value: 2 },
-      { next: '7', text: 'Option 6-4', value: -2 },
+      { text: 'Take the treasure', next: 'good_end' },
+      { text: 'Leave it', next: 'bad_end' },
     ],
   },
-  7: {
-    text: 'Scenario 7',
-    options: [
-      { next: '8', text: 'Option 7-1', value: 1 },
-      { next: '8', text: 'Option 7-2', value: -1 },
-      { next: '8', text: 'Option 7-3', value: 2 },
-      { next: '8', text: 'Option 7-4', value: -2 },
-    ],
+  good_end: {
+    text: 'Congratulations! You have found peace and prosperity. You live happily ever after.',
+    options: [{ text: 'Home Menu', next: 'start' }],
   },
-  8: {
-    text: 'Scenario 8',
-    options: [
-      { next: '9', text: 'Option 8-1', value: 1 },
-      { next: '9', text: 'Option 8-2', value: -1 },
-      { next: '9', text: 'Option 8-3', value: 2 },
-      { next: '9', text: 'Option 8-4', value: -2 },
-    ],
-  },
-  9: {
-    text: 'Scenario 9',
-    options: [
-      { next: '10', text: 'Option 9-1', value: 1 },
-      { next: '10', text: 'Option 9-2', value: -1 },
-      { next: '10', text: 'Option 9-3', value: 2 },
-      { next: '10', text: 'Option 9-4', value: -2 },
-    ],
-  },
-  10: {
-    text: 'Scenario 10',
-    options: [
-      { next: 'end', text: 'Option 10-1', value: 1 },
-      { next: 'end', text: 'Option 10-2', value: -1 },
-      { next: 'end', text: 'Option 10-3', value: 2 },
-      { next: 'end', text: 'Option 10-4', value: -2 },
-    ],
+  bad_end: {
+    text: 'Oh no! You have met an unfortunate end. Better luck next time.',
+    options: [{ text: 'Home Menu', next: 'start' }],
   },
 };
 

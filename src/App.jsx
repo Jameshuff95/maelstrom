@@ -33,7 +33,7 @@ function App() {
           Start Game
         </button>
       )}
-      {gameState !== 'end' && gameState !== 'start' && (
+      {gameState !== 'end' && gameState !== 'game' && gameState !== 'start' && (
         <button className="button" onClick={() => setGameState('start')}>
           End Game
         </button>

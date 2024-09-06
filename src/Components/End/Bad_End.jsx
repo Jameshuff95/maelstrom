@@ -1,29 +1,24 @@
-function Bad_End() {
+function Bad_End({ setGameState }) {
   return (
     <>
       <p>
-        The once clear lines between reality and delusion blur, twisting into a
-        nightmarish tapestry woven from your own fears and regrets.
+        Victor, overwhelmed by the relentless torment of the voices, finally
+        succumbs to the darkness. The oppressive whispers, once faint and
+        insidious, now dominate his every thought. The furniture, once mere
+        objects, seem to pulse with a malevolent life, their voices a constant
+        barrage of venom and despair. Victor’s mind fractures under the weight
+        of the relentless assault, and he descends into madness. The room, now a
+        twisted reflection of his shattered psyche, closes in on him. Shadows
+        twist and writhe, and the walls seem to breathe with a sinister life of
+        their own. Victor, lost in the labyrinth of his own mind, can no longer
+        distinguish reality from the nightmarish delusions that consume him. The
+        once faint hope of reclaiming his sanity is extinguished, and he is left
+        to wander the dark corridors of his mind, a prisoner of his own madness.
       </p>
 
-      <p>
-        Each step you take echoes with the haunting reminders of paths not
-        taken, of choices that led you deeper into the abyss.
-      </p>
-
-      <p>
-        The world around you warps and shifts, a reflection of your unraveling
-        mind.
-      </p>
-
-      <p>
-        In the end, it is not the darkness that claims you, but the madness born
-        from your own actions.
-      </p>
-      <p>
-        You are left alone, a prisoner of your own making, trapped in an endless
-        cycle of torment and despair.
-      </p>
+      <button className="button" onClick={() => setGameState('start')}>
+        Start Menu
+      </button>
     </>
   );
 }
