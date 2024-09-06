@@ -1,6 +1,6 @@
 .game_container {
-  height: 80vh;
-  width: 70vw;
+  height: 90vh;
+  width: 90vw;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -8,13 +8,22 @@
   justify-content: center;
 }
 
+.inner_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .card1 {
   border: 1px solid yellow;
   padding: 2%;
   display: flex;
-  grid-template-rows: 0.75fr 0.25fr;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .scenario {
@@ -25,7 +34,7 @@
 }
 
 .options {
-  height: 3rem; /* Set a fixed height for the options container */
+  height: 50%; /* Set a fixed height for the options container */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,13 +44,14 @@
 
 .options p {
   width: 95%;
-  height: 2rem; /* Set a fixed height for each option */
-  display: flex;
-  align-items: center;
+  height: 50%;
+  padding: 2%;
+  display: grid;
+  place-items: center;
   padding: 1%;
   cursor: pointer;
   margin: 0.5rem auto;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   border-radius: 5px;
   background-color: black;
   transition: background-color 0.3s ease;

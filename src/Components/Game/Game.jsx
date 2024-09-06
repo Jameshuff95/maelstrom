@@ -8,7 +8,7 @@ function Game({ setGameState }) {
   const renderScenario = () => {
     const currentScenario = paths[currentPath];
     return (
-      <div>
+      <div className="inner_container">
         <p className="scenario">{currentScenario.text}</p>
         <div className="options">
           {currentScenario.options.map((option, index) => (

@@ -44,24 +44,23 @@ function Start({ setGameState }) {
           <div className="start_message">
             <h2>Introduction</h2>
             <p>
-              In the forsaken depths of the asylum, where shadows whisper and
-              sanity crumbles, Dr. Evelyn Carter’s journey begins.
+              In Ethan's dimly lit apartment, shadows dance on the walls. Once
+              vibrant, Ethan is now trapped in depression, his days blending
+              into nights. The world moves on, but for Ethan, time stands still.
             </p>
             <p>
-              Each choice she makes drags her deeper into the abyss, where the
-              line between reality and nightmare blurs.
+              One evening, as rain taps against the window, Ethan hears
+              whispers. At first, he dismisses them, but they insistently grow
+              louder.
             </p>
             <p>
-              What secrets lie hidden in the darkness? What truths will she
-              uncover about herself?
+              Ethan stands at a crossroads. Will he succumb to the torment, or
+              confront his inner demons and reclaim his sanity?
             </p>
             <p>
-              Is she ready to confront the horrors that lurk within her own
-              mind?
-            </p>
-            <p>
-              Amidst the chaos, can she find a glimmer of hope to guide her back
-              to the light?
+              The choice is yours. Navigate Ethan’s journey through a dark
+              reality, where every decision shapes his fate. Will you guide him
+              towards redemption, or will the abyss consume him?
             </p>
           </div>
           <button className="button" ref={startButtonRef} onClick={handleClick}>
