@@ -34,7 +34,7 @@
 }
 
 .options {
-  height: 50%; /* Set a fixed height for the options container */
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +55,7 @@
   border-radius: 5px;
   background-color: black;
   transition: background-color 0.3s ease;
-  text-align: center; /* Center the text within the option */
+  text-align: center;
 }
 
 .options p:hover {
