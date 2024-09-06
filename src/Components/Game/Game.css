@@ -1,6 +1,6 @@
 .game_container {
-  height: 80dvh;
-  width: 70dvw;
+  height: 80vh;
+  width: 70vw;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -8,39 +8,47 @@
   justify-content: center;
 }
 
-.container {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 0.75fr, 1.25fr;
-}
-
 .card1 {
   border: 1px solid yellow;
   padding: 2%;
-  width: 95%;
-  height: 90%;
-  display: grid;
-  grid-template-rows: 0.75fr, 0.25fr;
+  display: flex;
+  grid-template-rows: 0.75fr 0.25fr;
   justify-content: center;
+  align-items: center;
 }
 
 .scenario {
-  height: 9rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 .options {
-  height: 4.75rem;
+  height: 3rem; /* Set a fixed height for the options container */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
 }
 
 .options p {
   width: 95%;
-  height: 1.5rem;
+  height: 2rem; /* Set a fixed height for each option */
   display: flex;
   align-items: center;
   padding: 1%;
   cursor: pointer;
-  margin: 0 auto;
+  margin: 0.5rem auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: black;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center the text within the option */
+}
+
+.options p:hover {
+  background-color: #e0e0e0;
+  color: black;
 }
